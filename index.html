@@ -11,14 +11,14 @@ body {
     background-color: #00005D;
 }
 
-/* 1) named grid areas */
+/* GRID AREAS */
 header { grid-area: header; }
 nav    { grid-area: nav; }
 main   { grid-area: main; }
 aside  { grid-area: aside; }
 footer { grid-area: footer; }
 
-/* 2) grid container layout */
+/* GRID LAYOUT */
 #wrapper {
     background-color: #b3c7e6;
     color: #000066;
@@ -35,14 +35,14 @@ footer { grid-area: footer; }
         "footer footer footer";
 }
 
-/* header */
+/* HEADER */
 header {
     background-image: url(images/header.jpg);
     background-repeat: no-repeat;
     height: 100px;
 }
 
-/* nav */
+/* NAV BUTTON BOXES */
 nav {
     padding: 20px;
     background-color: #E6E6FA;
@@ -51,27 +51,47 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
 }
 
 nav a {
-    text-decoration: none;
     display: block;
-    padding: 5px;
+    padding: 10px;
+    background-color: #0b3d91;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #062a63;
 }
 
-/* main */
+nav a:hover {
+    background-color: #062a63;
+}
+
+/* MAIN */
 main {
     padding: 20px;
     background-color: #FFFFFF;
 }
 
-/* aside */
+/* ASIDE */
 aside {
     padding: 20px;
     background-color: #FFFFFF;
 }
 
-/* footer */
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     font-size: 0.8em;
@@ -123,13 +143,13 @@ sharing their favorite places with guests.</p>
 
 <aside>
 
+<img src="images/scenery.jpg" alt="Sedona scenery">
+
 <h3>Guided Hikes</h3>
 
 <p>Explore the breathtaking scenery of Sedona with a guided hike. Our experienced
 guides will take you on unforgettable adventures through red rock canyons and
 desert landscapes.</p>
-
-<img src="images/scenery.jpg" alt="Sedona scenery">
 
 </aside>
 
